@@ -1,0 +1,170 @@
+!SESSION 2007-12-13 18:54:07.494 -----------------------------------------------
+eclipse.buildId=M20070921-1145
+java.version=1.6.0
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.emf.ecore 2 0 2007-12-13 18:55:44.318
+!MESSAGE Both 'org.apache.geronimo.deployment.model' and 'org.apache.geronimo.v11.deployment.model' register an extension parser for 'deployment'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2007-12-13 18:55:44.333
+!MESSAGE Both 'org.apache.geronimo.deployment.model' and 'org.apache.geronimo.v11.deployment.model' register an extension parser for 'naming'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2007-12-13 18:55:44.334
+!MESSAGE Both 'org.apache.geronimo.deployment.model' and 'org.apache.geronimo.v11.deployment.model' register an extension parser for 'web'
+!SESSION 2007-12-13 18:56:25.699 -----------------------------------------------
+eclipse.buildId=M20070921-1145
+java.version=1.6.0
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui.workbench 4 2 2007-12-13 18:56:53.143
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:550)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench.createSplashWrapper(Workbench.java:611)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2248)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+Caused by: org.eclipse.swt.SWTError: No more handles
+	at org.eclipse.swt.SWT.error(SWT.java:3589)
+	at org.eclipse.swt.SWT.error(SWT.java:3481)
+	at org.eclipse.swt.SWT.error(SWT.java:3452)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:438)
+	at org.eclipse.swt.widgets.Shell.createHandle(Shell.java:619)
+	at org.eclipse.swt.widgets.Widget.createWidget(Widget.java:385)
+	at org.eclipse.swt.widgets.Control.createWidget(Control.java:381)
+	at org.eclipse.swt.widgets.Scrollable.createWidget(Scrollable.java:148)
+	at org.eclipse.swt.widgets.Decorations.createWidget(Decorations.java:238)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:268)
+	at org.eclipse.swt.widgets.Shell.internal_new(Shell.java:353)
+	... 26 more
+Root exception:
+org.eclipse.swt.SWTError: No more handles
+	at org.eclipse.swt.SWT.error(SWT.java:3589)
+	at org.eclipse.swt.SWT.error(SWT.java:3481)
+	at org.eclipse.swt.SWT.error(SWT.java:3452)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:438)
+	at org.eclipse.swt.widgets.Shell.createHandle(Shell.java:619)
+	at org.eclipse.swt.widgets.Widget.createWidget(Widget.java:385)
+	at org.eclipse.swt.widgets.Control.createWidget(Control.java:381)
+	at org.eclipse.swt.widgets.Scrollable.createWidget(Scrollable.java:148)
+	at org.eclipse.swt.widgets.Decorations.createWidget(Decorations.java:238)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:268)
+	at org.eclipse.swt.widgets.Shell.internal_new(Shell.java:353)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:550)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench.createSplashWrapper(Workbench.java:611)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2248)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.ui 4 0 2007-12-13 18:56:53.198
+!MESSAGE Could not instantiate splash
+!STACK 0
+org.eclipse.swt.SWTError: No more handles
+	at org.eclipse.swt.SWT.error(SWT.java:3589)
+	at org.eclipse.swt.SWT.error(SWT.java:3481)
+	at org.eclipse.swt.SWT.error(SWT.java:3452)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:438)
+	at org.eclipse.swt.widgets.Shell.createHandle(Shell.java:619)
+	at org.eclipse.swt.widgets.Widget.createWidget(Widget.java:385)
+	at org.eclipse.swt.widgets.Control.createWidget(Control.java:381)
+	at org.eclipse.swt.widgets.Scrollable.createWidget(Scrollable.java:148)
+	at org.eclipse.swt.widgets.Decorations.createWidget(Decorations.java:238)
+	at org.eclipse.swt.widgets.Shell.<init>(Shell.java:268)
+	at org.eclipse.swt.widgets.Shell.internal_new(Shell.java:353)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:550)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench.createSplashWrapper(Workbench.java:611)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2248)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2007-12-13 18:57:18.423
+!MESSAGE Both 'org.apache.geronimo.deployment.model' and 'org.apache.geronimo.v11.deployment.model' register an extension parser for 'deployment'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2007-12-13 18:57:18.461
+!MESSAGE Both 'org.apache.geronimo.deployment.model' and 'org.apache.geronimo.v11.deployment.model' register an extension parser for 'naming'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2007-12-13 18:57:18.462
+!MESSAGE Both 'org.apache.geronimo.deployment.model' and 'org.apache.geronimo.v11.deployment.model' register an extension parser for 'web'
+!SESSION 2007-12-13 19:17:25.213 -----------------------------------------------
+eclipse.buildId=M20070921-1145
+java.version=1.6.0
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.emf.ecore 2 0 2007-12-13 19:18:04.002
+!MESSAGE Both 'org.apache.geronimo.deployment.model' and 'org.apache.geronimo.v11.deployment.model' register an extension parser for 'deployment'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2007-12-13 19:18:04.025
+!MESSAGE Both 'org.apache.geronimo.deployment.model' and 'org.apache.geronimo.v11.deployment.model' register an extension parser for 'naming'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2007-12-13 19:18:04.025
+!MESSAGE Both 'org.apache.geronimo.deployment.model' and 'org.apache.geronimo.v11.deployment.model' register an extension parser for 'web'

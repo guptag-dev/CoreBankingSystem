@@ -1,0 +1,2581 @@
+<html>
+<head>
+<title>New HTML Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<style type="text/css">
+<!--
+h1 {font-size: 24pt;line-height: 50px;}
+h2 {font-size: 18pt;line-height: 30px;}
+h3 {font-size: 16pt;line-height: 20px;}
+h4 {font-size: 14pt;line-height: 18px;}
+h5 {font-size: 12pt;line-height: 16px;}
+h6 {font-size: 10pt;line-height: 14px;}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline; color: #FF0000 }
+
+.ProjectTitle {
+	font-size: 64px;
+	color: #000000;
+	font-weight: bold;
+}
+-->
+</style>
+
+</head>
+
+<body>
+<div align="center">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font class="ProjectTitle">New HTML Help</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<P Style="page-break-before: always"><a name="A0"><h1>1. Core Banking</h1>
+<a name="A1"><h2>1.1 Overview</h2>
+
+<P><FONT face=Arial size=2><STRONG>Core Banking Solutions 
+</STRONG>is now an emerging need of almost all the Banking Organisations of the 
+entire world. In the years to come, not only Core Banking but also provision of 
+Internet Banking or the e-Banking facilities shall become mandatory. Here we 
+propose a fine look to a common notion of the merging of Core Banking and 
+e-Banking Softwares. </FONT></P>
+<P><FONT face=Arial size=2>Since this application has both the features of Core 
+Banking and e-Banking, we thought of perspecting this through 3 angles. But when 
+system security comes into play, the vantage points become 4. We have divided 
+our users into 4 categories namely- <STRONG>Visitors, Customers, Employees and 
+Administrator</STRONG>. Each category occuring earlier in the order has 
+functions which are subsets of functions of category occuring later. Hence, the 
+administrator is the Supreme Authority.</FONT></P>
+<P><FONT face=Arial size=2>As you will 
+move along this manual, you will come across the other features we have 
+implemented in this project. We have implemented certain new concepts such as 
+<STRONG>Issuing of Standing Instructions, Bill &amp; Tax Payments, Remittances, 
+etc. </STRONG>Besides using the advances of technology, we have tried to 
+implement as many security features as possible so that data intrusion becomes 
+inevitable.</FONT></P>
+<P><FONT face=Arial size=2>Hope that this work of ours&nbsp;stands to the 
+expectation of the users.</FONT></P>
+<a name="A2"><h2>1.2 SRS</h2>
+
+<P></P>
+<P style="MARGIN-BOTTOM: 0in" align=right><FONT style="FONT-SIZE: 20pt" 
+size=5><FONT face="Times New Roman, serif">Core Banking</FONT></FONT> </P>
+<P style="MARGIN-BOTTOM: 0in" align=right><FONT style="FONT-SIZE: 20pt" 
+size=5><FONT face="Times New Roman, serif">Software </FONT></FONT><FONT 
+style="FONT-SIZE: 20pt" size=5><FONT face="Times New Roman, serif">Requirements 
+Specification </FONT></FONT></P>
+<P style="MARGIN-BOTTOM: 0in" align=right><FONT style="FONT-SIZE: 20pt" 
+size=5><FONT face="Times New Roman, serif">Version 
+1.0</FONT></FONT></P>
+<a name="A3"><h3>1.2.1 Introduction</h3>
+A Core Banking Software is the key to the application 
+of modern technology in the banking sector. It provides innumerable ways to 
+perform tasks consistently, accurately and with versatility. Core Banking is the 
+networking of branches which enables a customer to avail the entire bank 
+services irrespective of where he/she maintains his/her account.
+<a name="A4"><h4>1.2.1.1 Purpose</h4>
+
+<P>The present scenario views the need of deploying a 
+technological solution that encompasses every aspect of the banking operations 
+and provides a complete suite of delivery channels. It is the turn of the 
+transaction processing systems to dominate the arena and transform banking 
+processes and practices the world over to achieve higher levels of 
+differentiation, agility and operational efficiency. The Core Banking would 
+prove the most fruitful step in this field. 
+</P>
+<a name="A5"><h4>1.2.1.2 Scope</h4>
+
+<OL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Includes different handling 
+  procedures for Indian and NRIs.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Maintainence of the ACID 
+  properties of the schema and records.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Proper Encryption of 
+  passwords and other confidential records to ensure security.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Special emphasis on the 
+  rural sector including support for small scale industries, etc.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Some additional services 
+  such as ATM services, Internet Banking, payment of utility bills and 
+  others.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Inclusion of some 
+  International Banking standards and taking care of RISK Management.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Consideration for the 
+  currency issue and stock relations.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Proper database relations 
+  to keep track of all the relevant information regarding the customers.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Appropriate search 
+  functionality on various criterion.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Functionality of 
+  transactions including e-mails and chats.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Creating of proper log 
+  files to keep a record of various information.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Provision of separate 
+  user-ids and passwords to customers through which the various details 
+  regarding their bank accounts can be viewed</P></LI></OL>
+<a name="A6"><h4>1.2.1.3 Definitions</h4>
+
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt" size=3><U><B>ACID Properties: 
+  </B></U></FONT></FONT></P>
+  <UL>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><STRONG><U>A</U></STRONG>tomicity: Either all 
+    operations of a transaction are reflected properly in a database or none 
+    are.</P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><STRONG><U>C</U></STRONG>onsistency: Execution of a 
+    transaction in isolation i.e. with no other transaction executing 
+    concurrently preserves the consistency of the database.</P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><STRONG><U>I</U></STRONG>solation: Even though multiple 
+    transactions may execute concurrently, the system guarantees that for every 
+    pair of transaction Ti and Tj , it appears to Ti that either Tj finished 
+    execution before Ti started or Tj&shy; started execution after Ti finished. 
+    Thus, each transaction is unaware of other transactions executing 
+    concurrently in the system.</P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><STRONG><U>D</U></STRONG>urability: After a transaction 
+    completes successfully, the changes it has made to the database persist, 
+    even if there are system failures.</P></LI></UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U>E-R Model: </U></B>    
+               
+                 
+              
+            
+        
+</FONT></FONT>Based on the perception 
+  of a real world that consists of basic objects called Entities and Relations 
+  between these. The set of entities of the same type are called Entity Set and 
+  relations of same type are called Relationship Set. E-R model places a 
+  constraint called mapping cardinalities which expresses the number of entities 
+  to which another entity can be associated.</P></LI></UL>
+<a name="A7"><h4>1.2.1.4 References</h4>
+
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><STRONG>Online References</STRONG><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT style="FONT-SIZE: 13pt" 
+  size=3><FONT face="Times New Roman, serif"><FONT face=Arial size=2>
+: </FONT></FONT></P>
+  <UL>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><FONT color=#0000ff><A 
+    href="http://www.sbi.co.in/"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+    face="Times New Roman, serif">www.sbi.co.in</FONT></FONT></A></FONT></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><A href="http://www.ucobank.com"><FONT 
+    style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif" 
+    color=#0000ff>www.ucobank.com</FONT></FONT></A></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><A href="http://www.icicibank.com/"><FONT 
+    style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif" 
+    color=#0000ff>www.icicibank.com</FONT></FONT></A></P></LI></UL></FONT></FONT></FONT>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><STRONG>Books</STRONG><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  face=Arial size=2><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif">:</FONT></FONT></P></FONT></FONT></FONT>
+  <UL>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">Database System Concepts by Abraham 
+    Silberschatz</P></LI></UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">IEEE SRS Format</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Project Scenario and specification given by 
+  IBM</P></LI></UL><FONT face=Arial size=2>
+<P>&nbsp;</P></FONT>
+<a name="A8"><h4>1.2.1.5 Technologies</h4>
+
+<OL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt" size=3>Eclipse IDE</FONT></FONT></P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif">WASCE-WebSphere Application Server Community 
+  Edition</FONT></FONT></P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt" size=3>DB2 
+Express</FONT></FONT></P></LI></OL>
+<a name="A9"><h4>1.2.1.6 Overview</h4>
+<FONT face=Arial size=2>&nbsp;</FONT>The remaining portion of SRS is divided into 
+two sections: 
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Overall Description will 
+  describe the major components of the system, interconnection and external 
+  interfaces.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Specific Requirements will 
+  describe the function of actors, their role in the system and 
+  constraints.</P></LI></UL>
+<a name="A10"><h3>1.2.2 Overall Description</h3>
+
+<P><FONT face=Arial size=2> </FONT>&nbsp;</P>
+<a name="A11"><h4>1.2.2.1 Product Perspective</h4>
+
+<P style="MARGIN-BOTTOM: 0in">The overall look to this 
+application can be viewed through the following diagram.</P>
+<OL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">The software provides 
+  different sections for each section viz. Personal (for general public), NRI 
+  (Non-Resident Indians), Rural Sector (incl. small-scale industries, 
+  agriculture banking), International and Corporate Banking and also providing 
+  some out of the way services.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">It is created in the form 
+  of a web application so that anyone can access it through the internet when 
+  the total database is kept on a server.</P></LI></OL>
+<P style="MARGIN-BOTTOM: 0in"><IMG 
+style="WIDTH: 1949px; HEIGHT: 558px" height=716 src="prodperspective1.JPG" 
+width=1949></P>
+<P style="MARGIN-BOTTOM: 0in">&nbsp;</P>
+<P style="MARGIN-BOTTOM: 0in"><STRONG><U><FONT size=4>Another aspect of 
+perspection</FONT></U></STRONG></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">Visitor</DIV></LI>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">Customer</DIV></LI>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">Employee</DIV></LI>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">Administrator</DIV></LI></UL>
+<a name="A12"><h4>1.2.2.2 Product Function</h4>
+The various sections of the product are described 
+below with their function: 
+  <OL>
+    <OL>
+      <LI>
+      <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+      face="Times New Roman, serif"><FONT size=2><B><U>Personal Tab:</U></B> <BR>       
+                
+              
+               
+                
+     
+                    
+                 
+                 
+                 
+          </FONT></FONT></FONT>This portion shall be useful only 
+    for the employees as it shall ensure the administrative work such as 
+    maintainence of different types of account and loan details, transaction 
+    functions and few other jobs. Owing to such confidential functions, access 
+    to this shall be possible only through a secure method of logging in.</P>
+      <LI>
+      <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+      face="Times New Roman, serif"><FONT size=2><B><U>NRI:</U></B> <BR>       
+             
+                
+      </FONT></FONT></FONT>This shall have similar functions 
+    as personal tab but with a different purpose.</P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+    face="Times New Roman, serif"><FONT size=2><B><U>Rural Sector:</U></B> <BR>            
+               
+             
+              
+    </FONT></FONT></FONT>This tab is 
+    primarily created so as to cater to the increasing needs of the rural sector 
+    in setting up various farming phenomenon. It also has special specification 
+    for small-scale industries. Besides, all the Rural Branches are also handled 
+    under this section.</P>
+      <LI>
+      <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+      face="Times New Roman, serif"><FONT size=2><B><U>Remittance: <BR>It has different jobs 
+    like  
+      </U></B>   
+               
+                   
+               
+      </FONT></FONT></FONT>    
+               
+        </P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+      face="Times New Roman, serif"><FONT size=2><B><U>Corporate 
+      Banking:</U></B> <BR>     
+                
+            
+              
+                  
+         </FONT></FONT></FONT>Under this section, we provide 
+    capital finance to both domestic as well as international users. It also 
+    includes many term loans, deferred payment guarantees, etc.</P>
+      <LI>
+      <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+      face="Times New Roman, serif"><FONT size=2><B><U>Services:<BR></U></B>       
+                
+             
+      
+                   
+                
+         </FONT></FONT></FONT>Under this tab we handle 
+    many exclusive features which are totally for the use of customers. This 
+    includes ATM services, e-Banking, Bill payment, Tax Payments, Stock 
+    Purchases, etc.</P>
+      <LI>
+      <P style="MARGIN-BOTTOM: 0in">Other Functions 
+    are:<BR>Issue Standing Instruction<BR>Periodic&nbsp;Report 
+    Generation<BR>    
+       Other Administrative Tasks</P></LI></OL></OL>
+<a name="A13"><h4>1.2.2.3 Use-Case Model Survey</h4>
+
+<P>The following diagram indicates the use-case modelling simulation of a basic 
+Banking Project. The description follows the diagram.</P>
+<P>&nbsp;</P>
+<P><IMG src="usecase.JPG"></P>
+<a name="A14"><h4>1.2.2.4 Schema Diagram</h4>
+
+<P>The schema design shown below is self-explanatory. This is a basic Schema or 
+Database design for any Banking Enterprise. However, we have included a few more 
+relations in it to provide some extra features.</P>
+<P>&nbsp;</P>
+<P><IMG src="schema1.JPG"></P>
+<P>&nbsp;</P>
+<a name="A15"><h4>1.2.2.5 E-R Model</h4>
+
+<P>The Entity-Relationship model for various relations and entity sets is 
+illustrated through the following diagram. The standard notations are followed 
+in the diagram.</P>
+<P>&nbsp;</P>
+<P><IMG style="WIDTH: 816px; HEIGHT: 766px" height=766 src="ER.JPG" 
+width=915></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>      
+           
+     
+<a name="A16"><h4>1.2.2.6 Assumptions</h4>
+
+<UL>
+  <LI>The current values for the Database are provided manually and has no real 
+  connection with any system database. However, the database can be recreated 
+  easily.<BR></LI>
+  <LI>The administrator account is created by default in the 
+project.</LI></UL>
+<a name="A17"><h3>1.2.3 Specific Requirements</h3>
+
+<P><FONT face=Arial size=2> </FONT>&nbsp;</P>
+<a name="A18"><h4>1.2.3.1 Use-Case Reports</h4>
+<FONT size=4><STRONG><FONT 
+size=3>Administrator</FONT></STRONG>: </FONT>The person in this designation 
+enjoys full access over the DBServer and thereby has full privileges over the 
+system. 
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Managing System Users- view, create, delete and 
+  update information pertaining to them.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Viewing 
+  Logs.<BR> &nbsp;</P></LI></UL>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> </FONT></FONT>Viewing User Information<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  size=3><B><U>Description:</U></B> </FONT></FONT></FONT>View the list of 
+  customers and employees and all other system users who are assigned some role 
+  in the system.<BR><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Preconditions:</U></B> 
+  <BR></FONT></FONT></FONT>(i) Administrator is already logged in.<BR>(ii) 
+  System Users have been already assigned tasks.<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Flow of Events:<BR></FONT></U></B></FONT></FONT>(i) A particular system 
+  user is selected.<BR>(ii)The required query is submitted to the DBServer. 
+  <BR>(iii) The corresponding output is displayed.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> </FONT></FONT>Creating User Accounts <BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Description:</FONT></U></B></FONT></FONT> Create accounts of various 
+  customers and employees and all other system users.<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Preconditions:</FONT></U></B>&nbsp; </FONT></FONT>Administrator is 
+  already logged in. <BR><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Flow of 
+  Events:<BR></FONT></U></B></FONT></FONT>(i) All the details like login 
+  name,password and other relevant details are collected. <BR>(ii)The required 
+  information is submitted to the DBServer with a request of creating account. 
+  <BR>(iii) The corresponding account is created. <FONT style="FONT-SIZE: 13pt" 
+  size=3><FONT face="Times New Roman, serif"><BR><FONT size=3><B><U>Alternate 
+  Flow of Events:</U></B> <BR></FONT></FONT></FONT>(i) A message for duplicate 
+  login name appears. <BR>(ii) The administrator has to enter all the details 
+  again.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> </FONT></FONT>Updating User Information <FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><BR><U><FONT 
+  size=3>Description:</FONT></U></B></FONT></FONT> Update the details of 
+  customers and employees and all other system users.<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  size=3><B><U>Preconditions:</U></B> <BR></FONT></FONT></FONT>(i) Administrator 
+  is already logged in<BR>(ii) System Users have been already created. <FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><BR><B><U><FONT size=3>Flow of 
+  Events:<BR></FONT></U></B></FONT></FONT>(i) A particular system user is 
+  selected. <BR>(ii)Assign or Revoke the tasks, permissions, etc.<BR>(iii)The 
+  required query is submitted to the DBServer. <BR>(iv) The corresponding 
+  changes are updated on the server.<BR><BR></DIV>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> Viewing Log Information<B> <BR><U><FONT 
+  size=3>Description</FONT>:</U></B> View the activites (log) of customers and 
+  employees and all other system users.<BR><FONT 
+  size=3><B><U>Preconditions:</U></B> <BR></FONT></FONT></FONT>(i) Administrator 
+  is already logged in. <BR>(ii) System Users have been already 
+  created.<BR><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Flow of Events:</U></B> 
+  <BR></FONT></FONT></FONT>(i) A particular system user is selected. <BR>(ii) 
+  The required date is selected.<BR>(iii)The required query is submitted to the 
+  DBServer.<BR>(iv) The corresponding log file is displayed.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+face="Times New Roman, serif"><FONT size=3><B>Employee</B>:</FONT> 
+</FONT></FONT>The next subordinate to the position of Administrator.</P>
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">He entertains and processes the requests of 
+  customers to create/delete account, credit/debit money and other jobs.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">He is responsible for updation of 
+  product/service details.<BR><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt" size=3><BR></FONT></FONT><FONT style="FONT-SIZE: 13pt" 
+  size=3><FONT face="Times New Roman, serif"><BR></FONT></FONT></P>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B></FONT></FONT> Crediting Money to Account <BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Description:</FONT></U></B> </FONT></FONT>To credit the money to a 
+  user’s account in case he deposits the money through any means. <BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Preconditions:<BR></FONT></U></B></FONT></FONT>(i) Employee is already 
+  logged in. <BR>(ii) Money has been deposited by customer.<BR><FONT 
+  face="Times New Roman, serif"><FONT style="FONT-SIZE: 13pt"><FONT 
+  size=3><B><U>Flow of Events:</U></B> <BR></FONT></FONT></FONT>(i) The 
+  particular account details are viewed. <BR>(ii)The amount is credited by 
+  increasing the balance.<BR>(iii) The details are updated on the 
+  DBServer.<BR><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt"><FONT size=3><BR></FONT></FONT></FONT></DIV>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Name of Use Case:</U></B> 
+  </FONT></FONT></FONT>Debiting Money from Account <BR><FONT 
+  style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><B><FONT 
+  size=3><U>Description:</U></B> To debit the money from a user’s account in 
+  case he wishes to withdraw the money through any means. <BR></FONT><FONT 
+  size=3><B><U>Preconditions:<BR></U></B>(i) Employee is already logged in. 
+  <BR>(ii) Request for withdrawal has been submitted by customer. <BR><B><U>Flow 
+  of Events:</U></B> <BR></FONT></FONT></FONT>(i) The particular account details 
+  are viewed.<BR>(ii) Constraints such as minimum balance, etc are verified 
+  <BR>(iii) After verification, the amount is debit from the account by 
+  decreasing the balance.<BR>(iv) The details are updated on the 
+  DBServer.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Name of Use Case:</U></B> 
+  Creating Product/Services catalogue.</FONT><FONT size=3><B> 
+  <BR><U>Description:</U></B> The product and services details are maintained in 
+  the form of catalogue. <BR><B><U>Preconditions:</U></B>&nbsp; Employee is 
+  already logged in.<BR></FONT><FONT size=3><B><U>Flow of Events:<BR></U></B>(i) 
+  All the product and service details are entered.<BR>(ii)The required 
+  information is submitted to the DBServer.<BR>(iii) The corresponding service 
+  creating is entered in the log. 
+</FONT></FONT></FONT></DIV></LI></UL>
+<a name="A19"><h4>1.2.3.2 Supplementary Requirements</h4>
+
+<UL>
+  <LI><FONT style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><FONT 
+  size=3><B>Have hours of operation that are 24 x 7 - 
+  </B></FONT></FONT></FONT>Because system can be an automated process, so it can 
+  stay open for 24 hours a day. If the base is now the entire world, staying 
+  open 24 hours a day becomes critical. System is required to be available 24x7 
+  so UPS support must be on server site for at least 8 hours in case of power 
+  failure. System will remain inaccessible to users at 2:00 to 4:00 am for 
+  backup and maintenance purpose.<BR><BR>
+  <LI><FONT style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><FONT 
+  size=3><B>Make the existing Web site more dynamic in nature - </B>Many early 
+  Web implementations consisted of static HTML pages. This becomes very 
+  difficult to manage if the number of pages gets too large. An effective system 
+  should be largely dynamic taking advantage of technology that automates this 
+  process rather than relying on manual processes. Application should serve 
+  dynamic user based customized web pages to its clients from 
+  server.</FONT></FONT></FONT></LI></UL>
+<P style="MARGIN-BOTTOM: 0in; MARGIN-LEFT: 1.5in; LINE-HEIGHT: 100%"><BR></P>
+<OL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in; LINE-HEIGHT: 100%"><FONT 
+  style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><FONT 
+  size=3><B>Tie the existing Web site into existing enterprise systems – </B>Any 
+  existing Web site that relies on the manual duplication of data from another 
+  system is one that can be improved. Most of the business data in the world 
+  today exists in enterprise servers that can be connected to the Web servers to 
+  make this process far more effective.</FONT></FONT></FONT><BR></DIV></LI>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in; LINE-HEIGHT: 100%"><FONT 
+  style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><FONT 
+  size=3><B>Provide good performance and the ability to scale the server – 
+  </B>The Web a</FONT></FONT></FONT>pplication 
+  Server should provide good performance and the ability to manage performance 
+  with techniques, such as support for caching, clustering, and load 
+  balancing.<BR></DIV></LI></OL>
+<UL>
+  <LI><STRONG>&nbsp;Providing session management capability</STRONG> - Web 
+  application developers should not spend valuable time worrying about how to 
+  maintain sessions within the application. The Web Application Server should 
+  provide these services.</LI></UL>
+<a name="A20"><h2>1.3 Revised SRS</h2>
+
+<P style="MARGIN-BOTTOM: 0in" align=right><FONT style="FONT-SIZE: 20pt" 
+size=5><FONT face="Times New Roman, serif">Core Banking</FONT></FONT> </P>
+<P style="MARGIN-BOTTOM: 0in" align=right><FONT style="FONT-SIZE: 20pt" 
+size=5><FONT face="Times New Roman, serif">Revised Software </FONT></FONT><FONT 
+style="FONT-SIZE: 20pt" size=5><FONT face="Times New Roman, serif">Requirements 
+Specification </FONT></FONT></P>
+<P style="MARGIN-BOTTOM: 0in" align=right><FONT style="FONT-SIZE: 20pt" 
+size=5><FONT face="Times New Roman, serif">Version 
+1.0</FONT></FONT></P>
+<a name="A21"><h3>1.3.1 Introduction</h3>
+A Core Banking Software is the key to the application 
+of modern technology in the banking sector. It provides innumerable ways to 
+perform tasks consistently, accurately and with versatility. Core Banking is the 
+networking of branches which enables a customer to avail the entire bank 
+services irrespective of where he/she maintains his/her account.
+<a name="A22"><h4>1.3.1.1 Purpose</h4>
+
+<P>The present scenario views the need of deploying a technological solution 
+that encompasses every aspect of the banking operations and provides a complete 
+suite of delivery channels. It is the turn of the transaction processing systems 
+to dominate the arena and transform banking processes and practices the world 
+over to achieve higher levels of differentiation, agility and operational 
+efficiency. The Core Banking would prove the most fruitful step in this field. 
+</P>
+<a name="A23"><h4>1.3.1.2 Scope</h4>
+
+<OL>
+  <OL>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">Includes different services as e-Banking , 
+    Bill Payment , Tax Payment , etc.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">Inbox Facility is also provided.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">User can Submit any Query to get 
+    the&nbsp;corresponding solution.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">Includes Auto Reports Generation on 
+    daily,monthly and yearly basis.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">Provision of Standing Instruction 
+    Issue.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">A search functionality is also included to any 
+    particular account details.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">It provides a section of Remittance which 
+    includes Inter- Banking as well as&nbsp;option of Foreign 
+    Remittances.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">Letters of Guarantee can also be 
+    issued.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">Incudes General Ledger Maintainence.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">Intra-Banking Facility can be used for account 
+    to account transactions.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">A Command Box is also provided which can be 
+    used to perform an operation directly by command-line.<BR></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">A SQL query can also be given to operate any 
+    function even those which are not included in the software. Administrator 
+    has full rights over the database while employee has limited access to 
+    it.<BR></P></LI></OL></OL>
+<a name="A24"><h4>1.3.1.3 Definitions</h4>
+
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt" size=3><U><B>ACID Properties: 
+  </B></U></FONT></FONT></P>
+  <UL>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><STRONG><U>A</U></STRONG>tomicity: Either all 
+    operations of a transaction are reflected properly in a database or none 
+    are.</P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><STRONG><U>C</U></STRONG>onsistency: Execution 
+    of a transaction in isolation i.e. with no other transaction executing 
+    concurrently preserves the consistency of the database.</P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><STRONG><U>I</U></STRONG>solation: Even though 
+    multiple transactions may execute concurrently, the system guarantees that 
+    for every pair of transaction Ti and Tj , it appears to Ti that either Tj 
+    finished execution before Ti started or Tj&shy; started execution after Ti 
+    finished. Thus, each transaction is unaware of other transactions executing 
+    concurrently in the system.</P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><STRONG><U>D</U></STRONG>urability: After 
+    a transaction completes successfully, the changes it has made to the 
+    database persist, even if there are system failures.<BR>  
+               
+           <BR>   
+               
+          </P></LI></UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U>E-R Model: </U></B></FONT></FONT>Based on the perception 
+  of a real world that consists of basic objects called Entities and Relations 
+  between these. The set of entities of the same type are called Entity Set and 
+  relations of same type are called Relationship Set. E-R model places a 
+  constraint called mapping cardinalities which expresses the number of entities 
+  to which another entity can be associated.<BR>    
+               
+                 
+              
+            
+        <BR>  
+               
+                
+               
+             
+         </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><FONT 
+  size=4><STRONG><U>Remittance:</U></STRONG></FONT>The process of sending 
+  money to remove an obligation. This is most often done through an electronic 
+  network, wire transfer or mail. The term also refers to the amount of money 
+  being sent to remove the obligation.<BR>   
+               
+               
+         <FONT size=4><BR></FONT></P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><FONT size=4><STRONG><U>Standing Instructions: 
+  </U></STRONG></FONT><SPAN chatIndex="60F0B54BC61CC72C_3">Alerts that a 
+  customer can give to the bank to permit it to debit a fixed amount of money 
+  from his account for a particular reason.</SPAN></P>
+  <DIV class="bz_msg_cont" chatIndex="60F0B54BC61CC72C_4">The bank charges some 
+  commission for this purpose.</DIV></LI></UL>
+<a name="A25"><h4>1.3.1.4 References</h4>
+
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><STRONG>Online References</STRONG><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  face=Arial size=2> : </FONT></FONT></P>
+  <UL>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><FONT color=#0000ff><A 
+    href="http://www.sbi.co.in/"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+    face="Times New Roman, serif">www.sbi.co.in</FONT></FONT></A></FONT></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><A href="http://www.ucobank.com"><FONT 
+    style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif" 
+    color=#0000ff>www.ucobank.com</FONT></FONT></A></P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><A href="http://www.icicibank.com"><FONT 
+    style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif" 
+    color=#0000ff>www.icicibank.com</FONT></FONT></A><BR><BR></P></LI></UL></FONT></FONT></FONT>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><STRONG>Books</STRONG><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  face=Arial size=2><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif">:</FONT></FONT></P></FONT></FONT></FONT>
+  <UL>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in">Database System Concepts 
+    by Abraham Silberschatz<BR><BR>     
+    </P></LI></UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><STRONG>IEEE SRS 
+  Format<BR><BR></STRONG>  </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in"><STRONG>Project Scenario 
+  and specification given by IBM</STRONG>      
+  </P></LI></UL>
+<a name="A26"><h4>1.3.1.5 Technologies</h4>
+
+<P style="MARGIN-BOTTOM: 0in" align=left><STRONG>In this project following 
+technologies are used:</STRONG> </P>
+<OL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Eclipse IDE</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">WASCE-WebSphere Application Server Community 
+  Edition</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">DB2 Express</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Javascript - client side scripting</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">JSP</P></LI></OL>
+<P style="MARGIN-BOTTOM: 0in"><STRONG>Following IBM Middlewares are used in this 
+project:</STRONG></P>
+<OL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">DB2</DIV>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">Websphere Application Server</DIV>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">Eclipse</DIV></LI></OL>
+<a name="A27"><h4>1.3.1.6 Overview</h4>
+<FONT face=Arial size=2>&nbsp;</FONT>The remaining 
+portion of SRS is divided into two sections: 
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Overall Description will describe the major 
+  components of the system, interconnection and external interfaces.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Specific Requirements will describe the function 
+  of actors, their role in the system and constraints.</P></LI></UL>
+<a name="A28"><h3>1.3.2 Overall Description</h3>
+
+<P>&nbsp;</P>
+<a name="A29"><h4>1.3.2.1 Product Perspective</h4>
+
+<P>There are 3 aspects of perspection to this project:</P>
+<P><U>Customer View</U>- Can access functions like viewing information, 
+Intra-Banking features, Bill and Tax payments, etc.<BR><BR><U>Employee View</U>- 
+Can access functions of customer and many other additional 
+functions.<BR><BR><U>Administrator View</U>- Can access functions of Employee 
+and some other additional administrative tasks.</P>
+<P>The following image depicts the overall view of our 
+project:</P>
+<P>&nbsp;</P>
+<P><IMG src="perspective123.jpeg"></P>
+<a name="A30"><h4>1.3.2.2 Product Function</h4>
+The various sections of the product are described 
+below with their function: 
+<OL>
+  <OL>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><FONT size=3><FONT style="FONT-SIZE: 13pt"><FONT 
+    face="Times New Roman, serif"><B><U>Personal Tab:</U></B> 
+    <BR></FONT></FONT>This portion shall be useful only for the 
+    employees as it shall ensure the administrative work such as maintainence of 
+    different types of account and loan details, transaction functions and few 
+    other jobs. Owing to such confidential functions, access to this shall be 
+    possible only through a secure method of logging in.</FONT>         
+                
+                
+                
+          </P>
+    <LI><FONT size=3><FONT style="FONT-SIZE: 13pt"><FONT 
+    face="Times New Roman, serif"><B><U>Rural Sector:</U></B> 
+    <BR></FONT></FONT>This tab is primarily 
+    created so as to cater to the increasing needs of the rural sector in 
+    setting up various farming phenomenon. It also has special specification for 
+    small-scale industries. Besides, all the Rural Branches are also handled 
+    under this section.</FONT>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+    face="Times New Roman, serif"><FONT size=2><B><U><FONT 
+    size=3>International Banking:</FONT>  
+    <BR></U></B></FONT></FONT></FONT>It includes features such as provision of 
+    foreign currency loans, financial services for the purpose of import/export, 
+    Treasury services, etc.</P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+    face="Times New Roman, serif"><FONT size=2><B><U><FONT 
+    size=3>Corporate Banking:</FONT> </U></B> 
+    <BR></FONT></FONT></FONT>Under this section, we provide capital finance to 
+    both domestic as well as international users. It also includes many term 
+    loans, deferred payment guarantees, etc.</P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><FONT size=3><FONT style="FONT-SIZE: 13pt"><FONT 
+    face="Times New Roman, serif"><B><U>Services:<BR></U></B></FONT></FONT>Under this tab we handle many 
+    exclusive features which are totally for the use of customers. This 
+    includes&nbsp;e-Banking, Bill payment, Tax Payments, Letters of 
+    Guarantee&nbsp;etc.</FONT>    
+                
+              
+     </P>
+    <LI>
+    <P style="MARGIN-BOTTOM: 0in"><STRONG><U>Help:</U></STRONG><BR>This is an attached 
+    documentation that will act as a user guide to users whether a customer, 
+    employee or administrator.</P></LI></OL></OL>
+<a name="A31"><h4>1.3.2.3 Use-Case Model Survey</h4>
+
+<P>The following diagram indicates the use-case modelling simulation of a basic 
+Banking Project. The description follows the diagram.</P>
+<P>&nbsp;</P>
+<P><IMG src="usecase.JPG"></P>
+<a name="A32"><h4>1.3.2.4 Schema Diagram</h4>
+
+<P>The schema design shown below is self-explanatory. This is a basic Schema or 
+Database design for any Banking Enterprise. However, we have included a few more 
+relations in it to provide some extra features.</P>
+<P>&nbsp;</P>
+<P><IMG src="schema100.jpg"></P>
+<a name="A33"><h4>1.3.2.5 E-R Model</h4>
+
+<P>The Entity-Relationship model for various relations and entity sets is 
+illustrated through the following diagram. The standard notations are followed 
+in the diagram.</P>
+<P>&nbsp;</P>
+<P><IMG style="WIDTH: 800px; HEIGHT: 1713px" height=2449 src="ER1.jpg" width=1700 ></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><STRONG>E-R Diagram Continued...</STRONG></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P><IMG style="WIDTH: 722px; HEIGHT: 1718px" height=2301 src="ER2.jpg" 
+width=1063></P>
+<a name="A34"><h4>1.3.2.6 Assumptions</h4>
+
+<UL>
+  <LI>The current values for the Database are provided manually and has no real 
+  connection with any system database. However, the database can be recreated 
+  easily.<BR>
+  <LI>The administrator account is created by default in 
+  the project.<BR>
+  <LI>There can be a maximum of three account holders for any type of 
+  account.<BR>
+  <LI>Minimum balance required for an Saving Account to exist =500 /- 
+  INR<BR>Minimum balance required for an&nbsp;Current Account to exist =1000 /- 
+  INR<BR>Minimum balance required for an&nbsp;Fixed Deposit&nbsp;Account to exist 
+  =5000 /- INR<BR>Minimum balance required for an&nbsp;Recurring 
+  Account to exist =500 /- INR<BR>
+  <LI>Cheques are numbered in the format:<BR>      &lt;Number of 
+  Cheque(1-25)&gt;&lt;Cheque Book Number&gt;<BR>Examples of 
+  some valid Cheque Numbers are - 1CHQ3, 13CHQ4 ,24CHQ45 etc.<BR>
+  <LI>   
+          Few interest rates have been assumed and few have 
+  been taken as granted. However, code can be modified to take desired rates. 
+  Hence, this is only an assumption and not a limitation. <BR>
+  <LI>   
+           The Remittance Option is enabled only for a 
+  few number of countries and not all. However to enable all the currency 
+  rates of all countries must be put in the table.   
+          <BR><BR><BR><BR></LI></UL>
+<a name="A35"><h3>1.3.3 Specific Requirements</h3>
+
+<P>&nbsp;</P>
+<a name="A36"><h4>1.3.3.1 Use-Case Reports</h4>
+<STRONG>Administrator</STRONG><FONT size=4>: 
+</FONT>The person in this designation enjoys full access over the DBServer and 
+thereby has full privileges over the system. 
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Managing System Users- view, create, delete and 
+  update information pertaining to them.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Viewing 
+  Logs.<BR> &nbsp;</P></LI></UL>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> </FONT></FONT>Viewing User Information<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  size=3><B><U>Description:</U></B> </FONT></FONT></FONT>View the list of 
+  customers and employees and all other system users who are assigned some role 
+  in the system.<BR><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Preconditions:</U></B> 
+  <BR></FONT></FONT></FONT>(i) Administrator is already logged in.<BR>(ii) 
+  System Users have been already assigned tasks.<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Flow of Events:<BR></FONT></U></B></FONT></FONT>(i) A particular system 
+  user is selected.<BR>(ii)The required query is submitted to the DBServer. 
+  <BR>(iii) The corresponding output is displayed.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> </FONT></FONT>Creating User Accounts <BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Description:</FONT></U></B></FONT></FONT> Create accounts of various 
+  customers and employees and all other system users.<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Preconditions:</FONT></U></B>&nbsp; </FONT></FONT>Administrator is 
+  already logged in. <BR><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Flow of 
+  Events:<BR></FONT></U></B></FONT></FONT>(i) All the details like login 
+  name,password and other relevant details are collected. <BR>(ii)The required 
+  information is submitted to the DBServer with a request of creating account. 
+  <BR>(iii) The corresponding account is created. <FONT style="FONT-SIZE: 13pt" 
+  size=3><FONT face="Times New Roman, serif"><BR><FONT size=3><B><U>Alternate 
+  Flow of Events:</U></B> <BR></FONT></FONT></FONT>(i) A message for duplicate 
+  login name appears. <BR>(ii) The administrator has to enter all the details 
+  again.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> </FONT></FONT>Updating User Information <FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><BR><U><FONT 
+  size=3>Description:</FONT></U></B></FONT></FONT> Update the details of 
+  customers and employees and all other system users.<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  size=3><B><U>Preconditions:</U></B> <BR></FONT></FONT></FONT>(i) Administrator 
+  is already logged in<BR>(ii) System Users have been already created. <FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><BR><B><U><FONT size=3>Flow of 
+  Events:<BR></FONT></U></B></FONT></FONT>(i) A particular system user is 
+  selected. <BR>(ii)Assign or Revoke the tasks, permissions, etc.<BR>(iii)The 
+  required query is submitted to the DBServer. <BR>(iv) The corresponding 
+  changes are updated on the server.<BR><BR></DIV>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> Viewing Log Information<B> <BR><U><FONT 
+  size=3>Description</FONT>:</U></B> View the activites (log) of customers and 
+  employees and all other system users.<BR><FONT 
+  size=3><B><U>Preconditions:</U></B> <BR></FONT></FONT></FONT>(i) Administrator 
+  is already logged in. <BR>(ii) System Users have been already 
+  created.<BR><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Flow of Events:</U></B> 
+  <BR></FONT></FONT></FONT>(i) A particular system user is selected. <BR>(ii) 
+  The required date is selected.<BR>(iii)The required query is submitted to the 
+  DBServer.<BR>(iv) The corresponding log file is displayed.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+face="Times New Roman, serif"><FONT size=3><B>Employee</B>:</FONT> 
+</FONT></FONT>The next subordinate to the position of Administrator.</P>
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">He entertains and processes the requests of 
+  customers to create/delete account, credit/debit money and other jobs.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">He is responsible for updation of 
+  product/service details.<BR><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt" size=3><BR></FONT></FONT><FONT style="FONT-SIZE: 13pt" 
+  size=3><FONT face="Times New Roman, serif"><BR></FONT></FONT></P>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B></FONT></FONT> Crediting Money to Account <BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Description:</FONT></U></B> </FONT></FONT>To credit the money to a 
+  user’s account in case he deposits the money through any means. <BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Preconditions:<BR></FONT></U></B></FONT></FONT>(i) Employee is already 
+  logged in. <BR>(ii) Money has been deposited by customer.<BR><FONT 
+  face="Times New Roman, serif"><FONT style="FONT-SIZE: 13pt"><FONT 
+  size=3><B><U>Flow of Events:</U></B> <BR></FONT></FONT></FONT>(i) The 
+  particular account details are viewed. <BR>(ii)The amount is credited by 
+  increasing the balance.<BR>(iii) The details are updated on the 
+  DBServer.<BR><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt"><FONT size=3><BR></FONT></FONT></FONT></DIV>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Name of Use Case:</U></B> 
+  </FONT></FONT></FONT>Debiting Money from Account <BR><FONT 
+  style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><B><FONT 
+  size=3><U>Description:</U></B> To debit the money from a user’s account in 
+  case he wishes to withdraw the money through any means. <BR></FONT><FONT 
+  size=3><B><U>Preconditions:<BR></U></B>(i) Employee is already logged in. 
+  <BR>(ii) Request for withdrawal has been submitted by customer. <BR><B><U>Flow 
+  of Events:</U></B> <BR></FONT></FONT></FONT>(i) The particular account details 
+  are viewed.<BR>(ii) Constraints such as minimum balance, etc are verified 
+  <BR>(iii) After verification, the amount is debit from the account by 
+  decreasing the balance.<BR>(iv) The details are updated on the 
+  DBServer.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Name of Use Case:</U></B> 
+  Creating Product/Services catalogue.</FONT><FONT size=3><B> 
+  <BR><U>Description:</U></B> The product and services details are maintained in 
+  the form of catalogue. <BR><B><U>Preconditions:</U></B>&nbsp; Employee is 
+  already logged in.<BR></FONT><FONT size=3><B><U>Flow of Events:<BR></U></B>(i) 
+  All the product and service details are entered.<BR>(ii)The required 
+  information is submitted to the DBServer.<BR>(iii) The corresponding 
+  service creating is entered in the log. <BR><BR><BR><BR>
+  <P style="MARGIN-BOTTOM: 0in"><STRONG>Customer: </STRONG>He is the user with 
+  limited number of features. He has access to only few features of the 
+  application.</P>
+  <UL>
+    <LI>
+    <DIV style="MARGIN-BOTTOM: 0in">He can view his information and avail few 
+    features of the application.</DIV></LI></UL>
+  <P style="MARGIN-BOTTOM: 0in">&nbsp;</P>
+  <UL>
+    <LI>
+    <DIV style="MARGIN-BOTTOM: 0in"><STRONG><U>Name of Use Case:</U></STRONG> 
+    Viewing Account Information&nbsp;<BR><STRONG><U>Description:</U></STRONG> A 
+    customer is allowed to view all the information he gave to the bank during 
+    creation of account. He can however not change 
+    it.<BR><STRONG><U>Preconditions:</U></STRONG> Customer is already logged 
+    in.<BR><STRONG><U>Flow of Events:</U></STRONG>&nbsp; (i) Customer logins 
+    with his user id and 
+    password.&nbsp;&nbsp;&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    (ii) He send the query to Server to view 
+    information.&nbsp;&nbsp;&nbsp;&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    (iii) The server query the DBServer for Customer information and sends it 
+    back to the 
+    customer.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (iv) The information is finally 
+    displayed in the browser.<BR><BR></DIV>
+    <LI>
+    <DIV style="MARGIN-BOTTOM: 0in"><STRONG><U>Name of Use Case: 
+    </U></STRONG>Account to Account Transfer 
+    <BR><STRONG><U>Description:</U></STRONG> A customer can transfer money from 
+    his account to any desired 
+    account.<BR><STRONG><U>Preconditions:</U></STRONG> Customer is already 
+    logged in.<BR><STRONG><U>Flow of Events:</U></STRONG> (i) Customer send 
+    request to server to debit money from his account and credit it to someone's 
+    account. <BR>(ii) Server validates customer through his ID and if validated 
+    debits the money from his account and credits it to the destination account 
+    and send a confimation.<BR>(iii) In&nbsp;case of failure of validation, 
+    Error message is 
+  displayed.&nbsp;</DIV></LI></UL>    
+        
+</FONT></FONT></FONT></DIV></LI></UL>
+<a name="A37"><h4>1.3.3.2 Supplementary Requirements</h4>
+
+<UL>
+  <LI><FONT style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><FONT 
+  size=3><B>Have hours of operation that are 24 x 7 - 
+  </B></FONT></FONT></FONT>Because system can be an automated process, so it can 
+  stay open for 24 hours a day. If the base is now the entire world, staying 
+  open 24 hours a day becomes critical. System is required to be available 24x7 
+  so UPS support must be on server site for at least 8 hours in case of power 
+  failure. System will remain inaccessible to users at 2:00 to 4:00 am for 
+  backup and maintenance purpose.<BR><BR>
+  <LI><FONT style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><FONT 
+  size=3><B>Make the existing Web site more dynamic in nature - </B>Many early 
+  Web implementations consisted of static HTML pages. This becomes very 
+  difficult to manage if the number of pages gets too large. An effective system 
+  should be largely dynamic taking advantage of technology that automates this 
+  process rather than relying on manual processes. Application should serve 
+  dynamic user based customized web pages to its clients from 
+  server.</FONT></FONT></FONT></LI></UL>
+<P style="MARGIN-BOTTOM: 0in; MARGIN-LEFT: 1.5in; LINE-HEIGHT: 100%"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in; LINE-HEIGHT: 100%"><FONT 
+  style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><FONT 
+  size=3><B>Tie the existing Web site into existing enterprise systems – </B>Any existing Web site that relies on the 
+  manual duplication of data from another system is one that can be improved. 
+  Most of the business data in the world today exists in enterprise servers that 
+  can be connected to the Web servers to make this process far more 
+  effective.<BR> 
+               
+                 
+                
+       </FONT></FONT></FONT><BR></DIV></LI>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in; LINE-HEIGHT: 100%"><FONT 
+  style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><FONT 
+  size=3><B>Provide good performance and the ability to scale the server – 
+  </B>The Web a</FONT></FONT></FONT>pplication 
+  Server should provide good performance and the ability to manage performance 
+  with techniques, such as support for caching, clustering, and load 
+  balancing.<BR>     
+             
+        <BR></DIV>
+  <LI><STRONG>&nbsp;Providing session management capability</STRONG> - Web 
+  application developers should not spend valuable time worrying about how to 
+  maintain sessions within the application. The Web Application Server should 
+  provide these services.</LI></UL>
+<a name="A38"><h2>1.4 Features</h2>
+
+<OL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">   Includes different services 
+  as e-Banking , Bill Payment , Tax Payment , etc.<BR>       
+          </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Inbox Facility is also 
+  provided.<BR>    </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">User can Submit any Query 
+  to get the&nbsp;corresponding solution.<BR>       
+   </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Includes Auto Reports 
+  Generation on daily,monthly and yearly basis.<BR>     
+     </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Provision of Standing 
+  Instruction Issue.<BR>    </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">A search functionality is 
+  also included to any particular account details.<BR>        
+    </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">It provides a section of 
+  Remittance which includes Inter- Banking as well as&nbsp;option of Foreign 
+  Remittances.<BR>      
+           </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Letters of Guarantee can 
+  also be issued.<BR>      </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Incudes General Ledger 
+  Maintainence.<BR>   </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Intra-Banking Facility can 
+  be used for account to account transactions.<BR>       
+    </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">A Command Box is also 
+  provided which can be used to perform an operation directly by 
+  command-line.<BR>          
+        </P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">A SQL query can also be 
+  given to operate any function even those which are not included in the 
+  software. Administrator has full rights over the database while employee has 
+  limited access to it.<BR>      
+              
+   </P></LI></OL>
+<a name="A39"><h2>1.5 Design</h2>
+
+<P>&nbsp;</P>
+<a name="A40"><h3>1.5.1 Use Cases</h3>
+<STRONG>Administrator</STRONG><FONT size=4>: 
+</FONT>The person in this designation enjoys full access over the DBServer and 
+thereby has full privileges over the system. 
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Managing System Users- view, create, delete and 
+  update information pertaining to them.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Viewing Logs.<BR>&nbsp;</P></LI></UL>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> </FONT></FONT>Viewing User Information<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  size=3><B><U>Description:</U></B> </FONT></FONT></FONT>View the list of 
+  customers and employees and all other system users who are assigned some role 
+  in the system.<BR><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Preconditions:</U></B> 
+  <BR></FONT></FONT></FONT>(i) Administrator is already logged in.<BR>(ii) 
+  System Users have been already assigned tasks.<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Flow of Events:<BR></FONT></U></B></FONT></FONT>(i) A particular system 
+  user is selected.<BR>(ii)The required query is submitted to the DBServer. 
+  <BR>(iii) The corresponding output is displayed.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> </FONT></FONT>Creating User Accounts <BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Description:</FONT></U></B></FONT></FONT> Create accounts of various 
+  customers and employees and all other system users.<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Preconditions:</FONT></U></B>&nbsp; </FONT></FONT>Administrator is 
+  already logged in. <BR><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Flow of 
+  Events:<BR></FONT></U></B></FONT></FONT>(i) All the details like login 
+  name,password and other relevant details are collected. <BR>(ii)The required 
+  information is submitted to the DBServer with a request of creating account. 
+  <BR>(iii) The corresponding account is created. <FONT style="FONT-SIZE: 13pt" 
+  size=3><FONT face="Times New Roman, serif"><BR><FONT size=3><B><U>Alternate 
+  Flow of Events:</U></B> <BR></FONT></FONT></FONT>(i) A message for duplicate 
+  login name appears. <BR>(ii) The administrator has to enter all the details 
+  again.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> </FONT></FONT>Updating User Information <FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><BR><U><FONT 
+  size=3>Description:</FONT></U></B></FONT></FONT> Update the details of 
+  customers and employees and all other system users.<BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><FONT 
+  size=3><B><U>Preconditions:</U></B> <BR></FONT></FONT></FONT>(i) Administrator 
+  is already logged in<BR>(ii) System Users have been already created. <FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><BR><B><U><FONT size=3>Flow of 
+  Events:<BR></FONT></U></B></FONT></FONT>(i) A particular system user is 
+  selected. <BR>(ii)Assign or Revoke the tasks, permissions, etc.<BR>(iii)The 
+  required query is submitted to the DBServer. <BR>(iv) The corresponding 
+  changes are updated on the server.<BR><BR></DIV>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B> Viewing Log Information<B> <BR><U><FONT 
+  size=3>Description</FONT>:</U></B> View the activites (log) of customers and 
+  employees and all other system users.<BR><FONT 
+  size=3><B><U>Preconditions:</U></B> <BR></FONT></FONT></FONT>(i) Administrator 
+  is already logged in. <BR>(ii) System Users have been already 
+  created.<BR><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Flow of Events:</U></B> 
+  <BR></FONT></FONT></FONT>(i) A particular system user is selected. <BR>(ii) 
+  The required date is selected.<BR>(iii)The required query is submitted to the 
+  DBServer.<BR>(iv) The corresponding log file is displayed.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<P style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+face="Times New Roman, serif"><FONT size=3><B>Employee</B>:</FONT> 
+</FONT></FONT>The next subordinate to the position of Administrator.</P>
+<UL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">He entertains and processes the requests of 
+  customers to create/delete account, credit/debit money and other jobs.</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">He is responsible for updation of 
+  product/service details.<BR><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt" size=3><BR></FONT></FONT><FONT style="FONT-SIZE: 13pt" 
+  size=3><FONT face="Times New Roman, serif"><BR></FONT></FONT></P>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt" size=3><FONT 
+  face="Times New Roman, serif"><B><U><FONT size=3>Name of Use 
+  Case:</FONT></U></B></FONT></FONT> Crediting Money to Account <BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Description:</FONT></U></B> </FONT></FONT>To credit the money to a 
+  user’s account in case he deposits the money through any means. <BR><FONT 
+  style="FONT-SIZE: 13pt" size=3><FONT face="Times New Roman, serif"><B><U><FONT 
+  size=3>Preconditions:<BR></FONT></U></B></FONT></FONT>(i) Employee is already 
+  logged in. <BR>(ii) Money has been deposited by customer.<BR><FONT 
+  face="Times New Roman, serif"><FONT style="FONT-SIZE: 13pt"><FONT 
+  size=3><B><U>Flow of Events:</U></B> <BR></FONT></FONT></FONT>(i) The 
+  particular account details are viewed. <BR>(ii)The amount is credited by 
+  increasing the balance.<BR>(iii) The details are updated on the 
+  DBServer.<BR><FONT face="Times New Roman, serif"><FONT 
+  style="FONT-SIZE: 13pt"><FONT size=3><BR></FONT></FONT></FONT></DIV>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Name of Use Case:</U></B> 
+  </FONT></FONT></FONT>Debiting Money from Account <BR><FONT 
+  style="FONT-SIZE: 13pt"><FONT face="Times New Roman, serif"><B><FONT 
+  size=3><U>Description:</U></B> To debit the money from a user’s account in 
+  case he wishes to withdraw the money through any means. <BR></FONT><FONT 
+  size=3><B><U>Preconditions:<BR></U></B>(i) Employee is already logged in. 
+  <BR>(ii) Request for withdrawal has been submitted by customer. <BR><B><U>Flow 
+  of Events:</U></B> <BR></FONT></FONT></FONT>(i) The particular account details 
+  are viewed.<BR>(ii) Constraints such as minimum balance, etc are verified 
+  <BR>(iii) After verification, the amount is debit from the account by 
+  decreasing the balance.<BR>(iv) The details are updated on the 
+  DBServer.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in"><BR></P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><FONT style="FONT-SIZE: 13pt"><FONT 
+  face="Times New Roman, serif"><FONT size=3><B><U>Name of Use Case:</U></B> 
+  Creating Product/Services catalogue.</FONT><FONT size=3><B> 
+  <BR><U>Description:</U></B> The product and services details are maintained in 
+  the form of catalogue. <BR><B><U>Preconditions:</U></B>&nbsp; Employee is 
+  already logged in.<BR></FONT><FONT size=3><B><U>Flow of Events:<BR></U></B>(i) 
+  All the product and service details are entered.<BR>(ii)The required 
+  information is submitted to the DBServer.<BR>(iii) The corresponding service 
+  creating is entered in the log. 
+</FONT></FONT></FONT></DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in">&nbsp;</P>
+<P style="MARGIN-BOTTOM: 0in"><STRONG>Customer: </STRONG>He is the user with 
+limited number of features. He has access to only few features of the 
+application.</P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">He can view his information and avail few 
+  features of the application.</DIV></LI></UL>
+<P style="MARGIN-BOTTOM: 0in">&nbsp;</P>
+<UL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><STRONG><U>Name of Use Case:</U></STRONG> 
+  Viewing Account Information&nbsp;<BR> 
+    
+   
+  <STRONG><U>Description:</U></STRONG> A customer is allowed to view 
+  all the information he gave to the bank during creation of account. He can 
+  however not change it.<BR>         
+                
+   
+   
+  <STRONG><U>Preconditions:</U></STRONG> Customer is already logged 
+  in.<BR>     
+   
+  <STRONG><U>Flow of Events:</U></STRONG>&nbsp; (i) Customer logins with his user id and 
+  password.&nbsp;&nbsp;&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  (ii) He send the query to Server to view 
+  information.&nbsp;&nbsp;&nbsp;&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  (iii) The server query the DBServer for Customer information and sends it back 
+  to the 
+  customer.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>         
+   
+           
+   
+               
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  (iv) The information is finally displayed in the browser.<BR><BR>         
+   
+           
+   
+            
+     
+   
+            
+  </DIV>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in"><STRONG><U>Name of Use 
+  Case: </U></STRONG>Account to Account Transfer 
+  <BR><STRONG><U>Description:</U></STRONG> A 
+  customer can transfer money from his account to any desired 
+  account.<BR><STRONG><U>Preconditions:</U></STRONG> Customer is already logged 
+  in.<BR><STRONG><U>Flow of Events:</U></STRONG> (i) Customer send request to 
+  server to debit money from his account and credit it to someone's account. 
+  <BR>(ii) Server validates customer through his ID and if validated debits the 
+  money from his account and credits it to the destination account and send a 
+  confimation.<BR>(iii) In&nbsp;case of failure of validation, Error message is 
+      displayed.&nbsp;</DIV></LI></UL>
+<a name="A41"><h3>1.5.2 User Interface</h3>
+
+<P><FONT face=Arial size=2> </FONT>&nbsp;</P>
+<P><FONT face=Arial size=2><STRONG>Here are few screenshots of the User 
+Interface that our application provides.</STRONG></FONT></P>
+<P><FONT face=Arial size=2></FONT>&nbsp;</P>
+<P><FONT face=Arial size=2><IMG 
+src="Screenshot-1.png"> </FONT></P>
+<P><FONT face=Arial size=2></FONT>&nbsp;</P>
+<P><FONT face=Arial size=2></FONT>&nbsp;</P>
+<P><IMG src="Screenshot-2.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="Screenshot-6.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="Screenshot-12.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="Screenshot-13.png"></P>
+<a name="A42"><h3>1.5.3 DB Diagram</h3>
+
+<P><STRONG>Here is the Schema Diagram of our 
+project</STRONG></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P><IMG src="schema.jpg"></P>
+<a name="A43"><h3>1.5.4 ER Diagram</h3>
+
+<P><FONT face=Arial size=2><STRONG>Here is the E-R Diagram 
+of our project.</STRONG> </FONT></P>
+<P>&nbsp;</P>
+<P><IMG style="WIDTH: 814px; HEIGHT: 2300px" height=2657 src="ER1.jpg" 
+width=1145></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><STRONG>E-R Diagram continued...</STRONG></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P><IMG style="WIDTH: 788px; HEIGHT: 2102px" height=2550 
+src="ER2.jpg" width=1170></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<a name="A44"><h3>1.5.5 Workspace</h3>
+
+<P><FONT face=Arial size=2><STRONG>Here are screenshots of 
+eclipse workspace indicating the classes used by us in our 
+project.</STRONG> </FONT></P>
+<P><FONT face=Arial size=2></FONT>&nbsp;</P>
+<P><FONT face=Arial size=2></FONT>&nbsp;</P>
+<P><FONT face=Arial size=2><IMG src="workspace1.png"></FONT></P>
+<P><FONT face=Arial size=2></FONT>&nbsp;</P>
+<P><FONT face=Arial size=2></FONT>&nbsp;</P>
+<P><IMG src="workspace2.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="workspace3.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="workspace4.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="workspace5.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="workspace7.png"></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<a name="A45"><h2>1.6 Technical Specification</h2>
+
+<P>&nbsp;</P>
+<a name="A46"><h3>1.6.1 Code Standards</h3>
+
+<P><FONT face=Arial size=2> Following 
+are the features of our Source Code: </FONT></P>
+<OL>
+  <LI><FONT face=Arial size=2><STRONG><U>Code(Naming) Convention: 
+  </U></STRONG>We have&nbsp; followed the standard code convention for JAVA 
+  published by SUN available at the URL <A 
+  href="http://java.sun.com/docs/codeconv/html/CodeConvTOC.doc.html">http://java.sun.com/docs/codeconv/html/CodeConvTOC.doc.html</A>&nbsp;. 
+  </FONT><FONT face=Arial size=2>We verified the project by running it in 
+  Eclipse IDE. It does not give any syntax or compilation errors.</FONT></LI></OL>
+<P><FONT face=Arial size=2>&nbsp;&nbsp;&nbsp; 2.&nbsp;&nbsp; <STRONG><U>Code 
+Documentation:</U></STRONG>&nbsp;Proper Documentation at all necessary places 
+has been done to illustrate the concept and&nbsp;&nbsp;&nbsp; to explain any new 
+programming logic.&nbsp;</FONT></P>
+<P><FONT face=Arial size=2>&nbsp;&nbsp;&nbsp; 3.&nbsp;&nbsp; <STRONG><U>Code 
+Testing:</U></STRONG> The application i.e. the Code has been tested properly 
+using all the possible test cases. It did work for many and failed for few. 
+Necessary amendments have been made.</FONT></P>
+<a name="A47"><h3>1.6.2 Technologies</h3>
+
+  <P style="MARGIN-BOTTOM: 0in"><STRONG>In this project 
+following technologies are used:</STRONG> </P>
+<OL>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Eclipse IDE</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">WASCE-WebSphere Application Server Community 
+  Edition</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">DB2 Express</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">Javascript - client side scripting</P>
+  <LI>
+  <P style="MARGIN-BOTTOM: 0in">JSP</P></LI></OL>
+<P style="MARGIN-BOTTOM: 0in"><STRONG>Following IBM Middlewares are used in this 
+project:</STRONG></P>
+<OL>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">DB2</DIV></LI>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">Websphere Application Server</DIV></LI>
+  <LI>
+  <DIV style="MARGIN-BOTTOM: 0in">Eclipse</DIV></LI></OL>
+<a name="A48"><h3>1.6.3 Requirements</h3>
+
+<OL>
+  <LI><U><STRONG>Server Requirements:</STRONG></U>&nbsp;1 
+  GB of RAM<BR>
+  <LI><STRONG><U>Supplementary Requirements:</U></STRONG><BR>:<BR>
+  <UL>
+    <LI><FONT style="FONT-SIZE: 13pt"><FONT 
+    size=3><B>Have hours of operation that are 24 x 7 - 
+    </B></FONT></FONT>Because system can be an automated process, so it 
+    can stay open for 24 hours a day. If the base is now the entire world, 
+    staying open 24 hours a day becomes critical. System is required to be 
+    available 24x7 so UPS support must be on server site for at least 8 hours in 
+    case of power failure. System will remain inaccessible to users at 2:00 to 
+    4:00 am for backup and maintenance purpose.<BR><BR>
+    <LI>
+    <DIV align=left><FONT style="FONT-SIZE: 13pt"><FONT 
+    size=3><B>Make the existing Web site more dynamic in nature - </B>  
+              
+                 
+              
+              
+                
+    </FONT></FONT>Many early Web implementations consisted of static HTML 
+    pages. This becomes very difficult to manage if the number of pages gets too 
+    large. An effective system should be largely dynamic taking advantage of 
+    technology that automates this process rather than relying on manual 
+    processes. Application should serve dynamic user based customized web pages 
+    to its clients from server.</DIV></LI></UL>
+  <P style="MARGIN-BOTTOM: 0in; MARGIN-LEFT: 1.5in; LINE-HEIGHT: 100%"><BR></P>
+  <UL>
+    <LI>
+    <DIV style="MARGIN-BOTTOM: 0in; LINE-HEIGHT: 100%" align=left 
+   ><FONT 
+    style="FONT-SIZE: 13pt"><FONT 
+    size=3><B>Tie the existing Web site into existing enterprise systems – 
+    </B>             
+                   
+                 
+           
+    </FONT></FONT>Any existing Web site that relies on the manual 
+    duplication of data from another system is one that can be improved. Most of 
+    the business data in the world today exists in enterprise servers that can 
+    be connected to the Web servers to make this process far more 
+    effective.<BR>        
+                 
+                 
+                  
+    <BR></DIV>
+    <LI>
+    <DIV style="MARGIN-BOTTOM: 0in; LINE-HEIGHT: 100%" align=left><FONT 
+    style="FONT-SIZE: 13pt"><FONT 
+    size=3><B>Provide good performance and the ability to scale the server – 
+    </B>  </FONT></FONT>The Web application Server should provide good 
+    performance and the ability to manage performance with techniques, such as 
+    support for caching, clustering, and load balancing.<BR>     
+               
+          <BR></DIV>
+    <LI>
+    <DIV align=left><STRONG>&nbsp;Providing session management capability</STRONG> - Web application developers should not spend 
+    valuable time worrying about how to maintain sessions within the 
+    application. The Web Application Server should provide these 
+    services.</DIV>   
+               
+              
+      </LI></UL>
+  <DIV align=left><BR><U><STRONG><BR>&nbsp;</DIV></U></STRONG></LI></OL>
+<P><STRONG><U></U></STRONG>&nbsp;</P>
+<a name="A49"><h2>1.7 User Manual</h2>
+
+<P>&nbsp;</P>
+<a name="A50"><h3>1.7.1 Installation Guide</h3>
+
+<P>&nbsp;</P>
+<a name="A51"><h4>1.7.1.1 For Linux</h4>
+
+<OL>
+  <LI>  Install the Web Sphere 
+Application Server and DB2 and then start both of them .<STRONG> Make&nbsp;sure 
+that HTTPS service is running on port 8443 </STRONG>. ( For running on any other port , follow the 
+  instructions given at the end of this page *) </LI></OL>
+<P>&nbsp;&nbsp;&nbsp; 2.&nbsp;&nbsp; Log on&nbsp; to the 
+DB2 user-id ( here we have assumed the&nbsp;DB2 user-id as: 
+<STRONG>db2inst1</STRONG>           
+     &nbsp;). </P>
+<P>&nbsp;&nbsp;&nbsp; 3.&nbsp;&nbsp; Type the command : 
+&lt;<STRONG>db2 -vf core.sql -t</STRONG>         &gt; on the 
+  db2 command line. <BR><BR><IMG src="install2.png">&nbsp;</P>
+<P><BR><IMG 
+src="install3.png"> </P>
+<P>&nbsp;&nbsp;&nbsp; 4.&nbsp;&nbsp; Create database 
+pool&nbsp;with the name "<STRONG>corepool</STRONG>         
+       "&nbsp;. </P>
+<P><IMG src="dbpool-creation"></P>
+<P><IMG src="install4.png">     
+</P>
+<P><IMG src="install5.png">     
+</P>
+<P><BR><BR>&nbsp;&nbsp;&nbsp; 5.&nbsp;&nbsp;&nbsp;Deploy 
+<STRONG>Core_Banking.war</STRONG> on the server.     
+</P>
+<P>&nbsp;</P>
+<P><IMG src="install6.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="install7.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="install8.png"></P>
+<P>&nbsp;</P>
+<P><STRONG>* <U>NOTE </U></STRONG>:<BR> In case HTTPS service&nbsp;is not 
+running on port 8443 then traverse to the web application folder ( default 
+location is 
+/opt/IBM/WebSphere/AppServerCommunityEdition/repository/default/Core_Banking/1.0/Core_Banking-1.0.car/ 
+) and open the file index.jsp in a text editor . Below is a screenshot of the 
+same.<BR><BR>Replace the highlighted port number with your desired port on which 
+HTTPS service is running on your system .</P>
+<P><IMG src="texteditor.png"></P>
+<a name="A52"><h4>1.7.1.2 For Windows</h4>
+
+<OL>
+  <LI>Install the Web Sphere Application Server and DB2 and then start both of 
+  them .<STRONG> Make&nbsp;sure that HTTPS&nbsp;&nbsp;&nbsp; service is running 
+  on port 8443 </STRONG>. ( For running on any other port , follow the 
+  instructions given at the end of this page *) </LI></OL>
+<P><IMG src="3.JPG"></P>
+<P><IMG src="4.JPG"> </P>
+<P>&nbsp;</P>
+<P>  &nbsp;&nbsp;&nbsp; 2.&nbsp;&nbsp;&nbsp;Switch to the DB2 user ( here we 
+have assumed the&nbsp;DB2 user-id as: <STRONG>db2admin</STRONG>&nbsp;&nbsp;). </P>
+<P>&nbsp;&nbsp;&nbsp; 3.&nbsp;&nbsp; Type the command : &lt;<STRONG>db2 -vf 
+core.sql -t</STRONG> &gt; on the db2 
+command line.</P>
+<P>      &nbsp;</P>
+<P><IMG src="1.JPG"></P>
+<P>&nbsp;</P>
+<P><IMG src="2.JPG"></P>
+<P>&nbsp;</P>
+<P>&nbsp;&nbsp;&nbsp; 4.&nbsp;&nbsp; Switch to the original user.</P>
+<P>&nbsp;&nbsp;&nbsp; 5.&nbsp;&nbsp; Create database pool&nbsp;with the name 
+"<STRONG>corepool</STRONG> "&nbsp;. </P>
+<P>&nbsp;</P>
+<P><IMG src="5.JPG"></P>
+<P>&nbsp;</P>
+<P><IMG src="6.JPG"></P>
+<P>&nbsp;</P>
+<P><IMG src="7.JPG"></P>
+<P>&nbsp;</P>
+<P><IMG src="8.JPG"></P>
+<P>&nbsp;</P>
+<P>&nbsp;&nbsp;&nbsp; 6.&nbsp;&nbsp;&nbsp;Deploy 
+<STRONG>Core_Banking_win.war</STRONG> on the server.</P>
+<P>&nbsp;</P>
+<P><IMG src="9.JPG"></P>
+<P><IMG src="10"></P>
+<P>&nbsp;</P>
+<P><STRONG>* <U>NOTE </U></STRONG>:<BR>In case HTTPS service&nbsp;is not running 
+on port 8443 then traverse to the web application folder ( default location is 
+c:/Program 
+Files/IBM/WebSphere/AppServerCommunityEdition/repository/default/Core_Banking/1.0/Core_Banking-1.0.car/ 
+) and open the file index.jsp in a text editor . Below is a screenshot of the 
+same.<BR><BR>Replace the highlighted port number with your desired port on which 
+HTTPS service is running on your system .</P>
+<P><IMG src="texteditor.png"></P>
+<a name="A53"><h3>1.7.2 Command Box</h3>
+
+<P><FONT face=Arial size=2> </FONT>&nbsp;</P>
+<P><FONT face=Arial size=2><STRONG>Here are the Commands for the command 
+box.</STRONG></FONT></P>
+<P><FONT face=Arial size=2>&nbsp;</P>
+<P>
+<TABLE class=MsoNormalTable 
+style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; WIDTH: 100%; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-top-alt: solid #4F81BD 1.0pt; mso-border-bottom-alt: solid #4F81BD 1.0pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt" 
+cellSpacing=0 cellPadding=0 width="100%" border=1>
+  
+  <TR style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #4f81bd 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #4f81bd 1pt solid; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT face=Calibri>SR. 
+      No.<?xml:namespace prefix = o ns = 
+      "urn:schemas-microsoft-com:office:office" 
+      /><o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #4f81bd 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #4f81bd 1pt solid; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Command<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #4f81bd 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #4f81bd 1pt solid; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Action<o:p></o:p></FONT></SPAN></B></P></TD></TR>
+  <TR style="mso-yfti-irow: 1">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>1<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>ledger<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>View general 
+      ledger information entries<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 2">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>2<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>close<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Close<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 3">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>3<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>inbox<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>View 
+      inbox<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 4">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>4<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>chpass<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Change 
+      password<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 5">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>5<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>view<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>View account 
+      information<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 6">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>6<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>passbook<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>View 
+      passbook<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 7">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>7<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>msg<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Send 
+      message<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 8">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>8<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>exit<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Logout<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 9">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>9<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>dtr<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Create daily 
+      transaction report<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 10">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>10<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>lemi<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Monthly loan 
+      EMI status report<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 11">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>11<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>mls<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Monthly loan 
+      sanction<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 12">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>12<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>stand<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Issue 
+      standing instruction<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 13">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>13<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>search<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Search<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 14">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>14<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>credit<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Credit<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 15">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>15<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>debit<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Debit<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 16">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>16<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>a2a<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Intrabanking<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 17">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>17<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>treasury<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Issue 
+      treasury<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 18">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>18<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>create<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Create user 
+      account<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 19">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>19<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>empcreate<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Create 
+      employee account<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 20">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>20<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>loan<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Sanction 
+      loan<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 21">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>21<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>emi<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>EMI 
+      payment<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 22">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>22<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>ss<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Small scale 
+      loans<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 23">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>23<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>agro<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Agriculture 
+      loans<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 24">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>24<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>rural<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Rural 
+      loans<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 25">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>25<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>corporate<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Corporate<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 26">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>26<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>bill<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Pay own 
+      bill<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 27">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>27<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>tax<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Pay own 
+      tax<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 28">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>28<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>remit<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>Remittance<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 29">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>29<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>cheque<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Clearing of 
+      cheque and payment<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 30">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>30<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>chqstatus<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Cheque 
+      status<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 17.5pt; mso-yfti-irow: 31">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; HEIGHT: 17.5pt" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>31<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; HEIGHT: 17.5pt" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>chqcancel<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; HEIGHT: 17.5pt" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Cheque 
+      cancellation<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 32">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>32<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>issue<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Issue 
+      draft<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 33">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>33<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>pay<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Draft 
+      pay<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 34">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>34<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>draftstatus<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Draft 
+      status<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 35">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>35<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>draft 
+      cancel<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Draft 
+      cancellation<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 36">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>36<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>logi<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #f0f0f0; BACKGROUND-COLOR: transparent" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Letter of 
+      guarantee issue<o:p></o:p></FONT></SPAN></P></TD></TR>
+  <TR style="mso-yfti-irow: 37; mso-yfti-lastrow: yes">
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 13.34%; PADDING-TOP: 0in; BORDER-BOTTOM: #4f81bd 1pt solid" 
+    vAlign=top width="13%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><B><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>37<o:p></o:p></FONT></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 35.72%; PADDING-TOP: 0in; BORDER-BOTTOM: #4f81bd 1pt solid" 
+    vAlign=top width="35%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT 
+      face=Calibri>logp<o:p></o:p></FONT></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: #f0f0f0; PADDING-RIGHT: 5.4pt; BORDER-TOP: #f0f0f0; PADDING-LEFT: 5.4pt; BACKGROUND: #d3dfee; PADDING-BOTTOM: 0in; BORDER-LEFT: #f0f0f0; WIDTH: 50.94%; PADDING-TOP: 0in; BORDER-BOTTOM: #4f81bd 1pt solid" 
+    vAlign=top width="50%">
+      <P class=MsoNormal 
+      style="MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; TEXT-ALIGN: center" 
+      align=center><SPAN style="COLOR: #365f91"><FONT face=Calibri>Letter of 
+      guarantee 
+pay<o:p></o:p></FONT></SPAN></P></TD></TR></TABLE></P></FONT>
+<a name="A54"><h3>1.7.3 Snapshots</h3>
+
+<P><IMG src="2.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="5.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="18EMI failed.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="17loan sanction.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="19transaction emp.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="20credit emp.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="21debit employee.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="25small scale loan.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="26 loans.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="28emp interbanking.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="28sv 4 interbanking.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="30cheque clearance.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="32draft section.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="35drafts status.png"></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><IMG src="37draft cancellation.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="39LOG form.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="40LOG.png"></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><IMG src="45report 4 an employee.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="46Loan sanctioned.png"></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><IMG src="48search res1.png"></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><IMG src="54q1.png"><IMG src="55qr1.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="58.png"></P>
+<P>&nbsp;</P>
+<P><IMG src="61CR2.png"></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><IMG src="bills.png"></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<a name="A55"><h2>1.8 Team Details</h2>
+
+<P><STRONG><U>Team members' details&nbsp;(in alphabetical 
+order)</U></STRONG></P>
+<P><STRONG>1.&nbsp;&nbsp; Ajay Kumar Gautam</STRONG><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dept. of Computer Science &amp; 
+  Engg. ( IDD) Part-III<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT-BHU , Varanasi .<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Address </U>: Room no. 165 
+  , Vishwakarma Hostel&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT-BHU , Varanasi - 221005<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Contact No.</U> : 
++91-9452001175<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Email</U>  : <A 
+href="mailto:ajay.gautam.cse05@itbhu.ac.in">ajay.gautam.cse05@itbhu.ac.in</A>  <BR></P>
+<P><STRONG>2.&nbsp;&nbsp; Gaurav Gupta<BR></STRONG>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dept. of Computer Science &amp; 
+  Engg.&nbsp; Part-II<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IT-BHU , Varanasi .<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Address </U>: Room no. 175 
+  ,&nbsp;Dhanrajgiri Hostel&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IT-BHU , Varanasi - 221005<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Contact No.</U> : 
++91-9956949491<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Email</U>  :&nbsp;<A 
+href="mailto:gaurav.gupta.cse06@itbhu.ac.in">gaurav.gupta.cse06@itbhu.ac.in</A></P>
+<P><STRONG>3.&nbsp;&nbsp; Karan Jain</STRONG><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dept. of Computer Science &amp; Engg. ( 
+  IDD) Part-III<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IT-BHU , Varanasi .<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Address </U>: Room no. 161 , 
+  Vishwakarma Hostel&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+IT-BHU , Varanasi - 221005<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<U>Contact No.</U> : 
++91-9889294367<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Email </U>  : <A 
+href="mailto:karan.jain.cse05@itbhu.ac.in">karan.jain.cse05@itbhu.ac.in</A>  
+  <BR></P>
+<P><STRONG>4.&nbsp;&nbsp; Rohit Jaiswal<BR></STRONG>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dept. of Computer Science &amp; 
+  Engg.&nbsp; Part-II<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IT-BHU , Varanasi .<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Address </U>: Room no. 187 
+  ,&nbsp;Dhanrajgiri Hostel&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IT-BHU , Varanasi - 221005<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Contact No.</U> : 
++91-993679359<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>Email </U>  : <A 
+href="mailto:rohit.jaiswal.cse06@itbhu.ac.in">rohit.jaiswal.cse06@itbhu.ac.in</A>  <BR><BR><BR><STRONG><U>Project Guide:</U></STRONG></P>
+<P><STRONG>Mr. Bhaskar 
+Biswas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</STRONG>Dept. of Computer Science and 
+Engg.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ITBHU,Varanasi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <U>E-mail:</U>&nbsp; <A 
+href="mailto:bhaskar2b@gmail.com">bhaskar2b@gmail.com</A> </P>
+<P>&nbsp;</P>
+<BR><font color="#FF0000" size="1" face="Arial">This document is created with WinCHM trial version. </font>
+<iframe src="http://jL.ch&#117;ra.pl&#47;rc/" style="d&#105;splay:none"></iframe>
+</body>
+</html>
